@@ -1,18 +1,25 @@
 
 ## About this project
 
-The purpose of this demo is to showcase a very simple usage of the new [OpenAI Chat completions API](https://platform.openai.com/docs/guides/gpt/chat-completions-api).
+The purpose of this demo is to showcase a very simple usage of the new [OpenAI Chat completions API](https://platform.openai.com/docs/guides/gpt/chat-completions-api) and the `gpt-3.5-turbo` model.
 
-If you want to integrate ChatGPT on your company Website or mobile app and provide a Virtual Assistant (ChatGPT bot) to your employees, customers or partners, this is a quick and very simple example of how todo it. 
+If you want to integrate ChatGPT on your company Website or mobile app and provide a Virtual Assistant (ChatGPT bot) to your employees, customers or partners, this is a quick and very simple example of how todo it.
 
-Here is a look at the result: ![](resources/img/chat.png)
+Here is a look at the result:
+
+![](resources/img/chat.png)
 
 
 ### Software stack and setup
 
-* Create a new Laravel 10 web application
-* Configure OpenAI PHP client (`openai-php/laravel`)
-* Generate your OpenAI API key and set it (`OPENAI_API_KEY=sk-...`) in the .env file.
+* Checkout this repo locally
+* This is a Laravel 10 web application
+  * Uses OpenAI PHP client (`openai-php/laravel`)
+  * Make sure you have Docker Engine installed
+* Generate your OpenAI API key and set it (`OPENAI_API_KEY=sk-...`) in the .env file of the project.
+* cd into the project directory and start the container: `./vendor/bin/sail up -d`
+* Open your browser and go to http://localhost
+* Enjoy chatting with your Virtual Assistant ;)
 
 ---
 
